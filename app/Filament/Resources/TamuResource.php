@@ -45,9 +45,11 @@ class TamuResource extends Resource
                     ->required()
                     ->label('Alasan'),
                 FileUpload::make('foto_tamu')
-                    ->image()
-                    ->disk('public')
-                    ->label('Foto Tamu'),
+    ->label('Foto Tamu')
+    ->directory('img') // Akan disimpan ke storage/app/public/img
+    ->image()
+    ->imagePreviewHeight('150')
+    ->visibility('public'),
             ]);
     }
 
@@ -64,9 +66,9 @@ class TamuResource extends Resource
                 TextColumn::make('alasan')
                 ->label('Alasan'),
                 ImageColumn::make('foto_tamu')
-                ->disk('public')
-                ->height(100)
-                ->label('Foto Tamu'),
+    ->label('Foto')
+    ->url(fn ($record) => asset('storage/' . $record->foto_tamu))
+    ->height(60),
             ])
             ->filters([
                 //

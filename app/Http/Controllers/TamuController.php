@@ -16,7 +16,7 @@ class TamuController extends Controller
         'asal_tamu'    => ['required'],
         'menemui'      => ['required'],
         'alasan'       => ['required'],
-        'foto_tamu'    => ['required'],
+        'foto_tamu'    => ['required'], // base64 image string
     ]);
 
     // Decode base64 dari foto
@@ -27,15 +27,20 @@ class TamuController extends Controller
     // Nama file unik
     $fileName = uniqid('image_') . '.png';
 
-    // Simpan di storage/app/public/foto_tamu
-    Storage::disk('public')->put('' . $fileName, $imageData);
+    // Simpan ke disk 'public' di folder 'img'
+    Storage::disk('public')->put('img/' . $fileName, $imageData);
 
-    // Simpan path relatif untuk ditampilkan di view
-    $valid['foto_tamu'] = '' . $fileName;
+    // Simpan path relatif ke DB (sesuai disk public)
+    $valid['foto_tamu'] = 'img/' . $fileName;
 
     Tamu::create($valid);
 
-    return redirect('/')->with('succ', 'Berhasil menambah list tamu.');
+
+    return response()->json([
+    'success' => true,
+    'message' => 'Berhasil menambah list tamu.'
+]);
+
 }
 
 
