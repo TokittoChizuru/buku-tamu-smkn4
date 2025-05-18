@@ -1,0 +1,247 @@
+/* RESET DAN BASE */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e4e4e7 !important;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px;
+    height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 0 0.5px #ccc;
+}
+
+nav .logo {
+    width: 50px;
+    padding-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+nav ul li a,
+nav .btn,
+nav .nav-link,
+nav .navbar-brand {
+    color: #d97706
+}
+
+/* CONTENT */
+.con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+/* CARD / TEXT BOX */
+.teks {
+    text-align: center;
+    max-width: 400px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.teks h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #d97706;
+}
+
+.teks p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* FORM */
+.form {
+    width: 800px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px #d97706;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form form label {
+    margin-top: 5px;
+    font-weight: 600;
+    color: #d97706;
+}
+
+.form form input[type="text"],
+.form form input[type="email"],
+.form form input[type="password"],
+.form form input[type="submit"] {
+    width: 100%;
+    padding: 7px 11px;
+    border-radius: 12px;
+    background-color: white;
+    outline: none;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    color: #333;
+}
+
+.form form input[type="submit"],
+.form form .btn {
+    margin-top: 5px;
+    background-color: #d97706;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form form input[type="submit"]:hover,
+.form form .btn:hover {
+    background-color: #c76900;
+}
+
+.form form input[type="hidden"] {
+    display: none;
+    border-radius: 10px;
+}
+
+.form form .foto {
+    border-radius: 10px;
+}
+
+/* TITLE */
+.teks .title {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.teks .title img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.teks .title h3 {
+    font-size: 24px;
+    color: #d97706;
+}
+
+.teks .title h5 {
+    font-size: 16px;
+    color: #d97706;
+}
+
+/* DROPDOWN */
+.dropdown-menu {
+    width: 100px;
+    position: relative;
+    display: inline-block;
+}
+
+.hidden {
+    display: none;
+}
+
+/* --- DARK MODE --- */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black !important;
+        color: #ccc !important;
+    }
+
+    nav {
+        background-color: #18181B;
+    }
+
+    nav ul li a,
+    nav .btn,
+    nav .nav-link,
+    nav .navbar-brand {
+        color: #Ffffff !important;
+    }
+
+    .con {
+        background-color: transparent;
+    }
+
+    .teks {
+        background-color: #18181B;
+        color: #ccc;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.8);
+    }
+
+    .teks h2,
+    .teks .title h3,
+    .teks .title h5,
+    .form form label {
+        color: #FBBF24;
+    }
+
+    .form {
+        background-color: #18181B;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.8);
+    }
+
+    .form:hover {
+        box-shadow: 0 12px 24px #FBBF24;
+    }
+
+    .form form input[type="text"],
+    .form form input[type="email"],
+    .form form input[type="password"] {
+        background-color: #121212;
+        color: #eee;
+        border: 1px solid #333;
+    }
+
+    .form form input[type="submit"],
+    .form form .btn {
+        background-color: #FBBF24;
+        color: black;
+    }
+
+    .form form input[type="submit"]:hover,
+    .form form .btn:hover {
+        background-color: darkorange;
+    }
+}

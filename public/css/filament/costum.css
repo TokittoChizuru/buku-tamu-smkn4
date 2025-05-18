@@ -1,0 +1,18 @@
+/* Ganti background seluruh body Filament */
+body.filament-body {
+    background-color: #f0f8ff !important;
+}
+
+/* Ganti background container utama */
+.filament-main {
+    background-color: #f0f8ff !important;
+}
+
+/* Kadang juga ganti warna sidebar dan navbar supaya matching */
+.filament-sidebar {
+    background-color: #204060 !important;
+}
+
+.filament-navbar {
+    background-color: #305080 !important;
+}
