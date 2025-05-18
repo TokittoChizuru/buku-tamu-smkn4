@@ -125,7 +125,8 @@ DB_PASSWORD=  # Sesuaikan dengan konfigurasi Anda
 
 ```bash
 php artisan migrate
-# php artisan db:seed (jika tersedia)
+php artisan db:seed
+php artisan storage:link
 ```
 
 ### 6. Jalankan Server
@@ -133,6 +134,13 @@ php artisan migrate
 ```bash
 npm run dev
 php artisan serve
+```
+
+### 7. Masuk Ke Admin Panel
+
+```bash
+Email : admin@smkn4.com
+Password : admin#1234
 ```
 
 Akses aplikasi di `http://localhost:8000` 🌐
