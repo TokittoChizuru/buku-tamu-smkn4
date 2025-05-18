@@ -125,4 +125,4 @@ Kontribusi sangat dihargai! Buka issue sebelum melakukan perubahan besar. Yuk, b
 
 Proyek ini berada di bawah lisensi MIT. Silakan gunakan dan modifikasi dengan bijak. [MIT license](https://opensource.org/licenses/MIT).
 
-> Dibuat dengan semangat dan presisi ala negeri sakura 🇯🇵 oleh developer penuh dedikasi.
+> Dibuat dengan semangat dan presisi ala negeri sakura 🇯🇵 oleh RizDev penuh dedikasi.
