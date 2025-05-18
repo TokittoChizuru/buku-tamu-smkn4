@@ -37,7 +37,7 @@ class TamuResource extends Resource
                     ->label('Nama Lengkap'),
                 TextInput::make('asal_tamu')
                     ->required()
-                    ->label('Asal Tamu'),
+                    ->label('Instansi'),
                 TextInput::make('menemui')
                     ->required()
                     ->label('Menemui'),
@@ -60,7 +60,7 @@ class TamuResource extends Resource
                 TextColumn::make('nama_lengkap')
                 ->label('Nama Lengkap'),
                 TextColumn::make('asal_tamu')
-                ->label('Asal Tamu'),
+                ->label('Instansi'),
                 TextColumn::make('menemui')
                 ->label('Menemui'),
                 TextColumn::make('alasan')
