@@ -30,7 +30,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img class="logo" src="{{ asset('img/logo.png')}}" alt="" srcset=""><b>Buku Tamu</b></a>
+            <a class="navbar-brand" href="#"><img class="logo" src="{{ asset('img/logo.png')}}" alt="" srcset=""><b style="font-size: 16px">Buku Tamu</b></a>
             <div class="d-flex" id="navbarNav">
                 <ul class="navbar-nav ">
                     <li class="nav-item">
@@ -62,7 +62,7 @@
 
     
 
-    <div class="con">
+<div class="con">
     <div class="teks">
         <div class="title">
             <div class="logo">
